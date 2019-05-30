@@ -21,6 +21,8 @@ import org.testng.annotations.AfterTest;
 public class Roles {
 	public FirefoxDriver driver;
 	UserData data = new UserData();
+	
+	
 
   @Test(dataProvider = "roleName_dp", priority = 0, enabled = true)
   public void roleNameValidation(String name, String errorMessage) throws InterruptedException {
